@@ -28,14 +28,16 @@ let customProgressFunc = (percentage, itemToAdd) => {
   // code here
 };
 
-// next function
+// prev function
 let prevProgressFunc = (percentage, prevItem, thisItem) => {
   stepper_progress.style.width = `${percentage}%`;
-
-  // for (let i = 0; i < childItem.length; i++) {
-  //   childItem[i].classList.add("hidden");
-  // }
   document.getElementById(`${thisItem}`).classList.add("hidden");
+  document.getElementById(`${prevItem}`).classList.remove("hidden");
+};
 
+// next function
+let nextProgressFunc = (percentage, prevItem, thisItem) => {
+  stepper_progress.style.width = `${percentage}%`;
+  document.getElementById(`${thisItem}`).classList.add("hidden");
   document.getElementById(`${prevItem}`).classList.remove("hidden");
 };
