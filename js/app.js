@@ -16,7 +16,9 @@ let childItem = document.querySelectorAll(".stepper_item");
 
 // functions
 let customProgressFunc = (percentage, itemToAdd) => {
+  // percentage
   stepper_progress.style.width = `${percentage}%`;
+  //   stepper_progress.classList.add("bg-violate-800");
 
   //   code here
   for (let i = 0; i < childItem.length; i++) {

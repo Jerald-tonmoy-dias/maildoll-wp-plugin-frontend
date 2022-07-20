@@ -41,205 +41,148 @@
                     </li>
                     <li>
                         <button onclick="customProgressFunc('40','stepper_content_2')" id="stepper_btn_2"
-                            class="w-10 h-10 text-center bg-violet-700 text-white rounded-full">
+                            class="w-10 h-10 bg-white text-violet-800 border-4 border-violet-800 rounded-full font-bold">
                             <i class="fa-solid fa-phone-volume"></i>
                         </button>
                     </li>
                     <li>
                         <button onclick="customProgressFunc('60','stepper_content_3')" id="stepper_btn_3"
-                            class="w-10 h-10 text-center bg-violet-700 text-white rounded-full">
+                            class="w-10 h-10 bg-white text-violet-800 border-4 border-violet-800 rounded-full font-bold">
                             <i class="fa-solid fa-envelope-circle-check"></i>
                         </button>
                     </li>
                     <li><button onclick="customProgressFunc('80','stepper_content_4')" id="stepper_btn_4"
-                            class="w-10 h-10 text-center bg-violet-700 text-white rounded-full">
+                            class="w-10 h-10 bg-white text-violet-800 border-4 border-violet-800 rounded-full font-bold">
                             <i class="fa-solid fa-gear"></i>
                         </button></li>
-                    <li><button onclick="customProgressFunc('100','stepper_content_5')" id="stepper_btn_5"
-                            class="w-10 h-10 text-center bg-violet-700 text-white rounded-full">
-                            <i class="fa-solid fa-gear"></i>
-                        </button></li>
+                    <li>
+                        <button onclick="customProgressFunc('100','stepper_content_5')" id="stepper_btn_5"
+                            class="w-10 h-10 bg-white text-violet-800 border-4 border-violet-800 rounded-full font-bold">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
         <div id="stepper_wrapper" class="stepper_content_wrapper mt-20">
             <div class="stepper_item" id="stepper_content_1">
-                one
+                <div class="drop-shadow rounded p-20  bg-white">
+                    <img class="w-80 mx-auto" src="./images/wellcome-Vector.png" alt="">
+                    <h3 class=" text-center text-xl capitalize font-bold mt-5">Thank you for the purchase</h3>
+                    <button
+                        class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">start
+                        installation</button>
+                </div>
             </div>
             <div class="stepper_item hidden" id="stepper_content_2">
-                two
+                <div class="drop-shadow rounded p-20  bg-white">
+
+                    <form>
+                        <ul class="flex items-center flex-col">
+                            <li class="flex items-baseline mb-4">
+                                <input class="mr-4" id="list-1" type="checkbox">
+                                <label for="list-1">It is a long established fact that a reader will be
+                                    distracted by the
+                                    readable content of a page when looking at its layout.</label>
+                            </li>
+                            <li class="flex items-baseline mb-4">
+                                <input class="mr-4" id="list-2" type="checkbox">
+                                <label for="list-2">It is a long established fact that a reader will be
+                                    distracted by the
+                                    readable content of a page when looking at its layout.</label>
+                            </li>
+                            <li class="flex items-baseline mb-4">
+                                <input class="mr-4" id="list-3" type="checkbox">
+                                <label for="list-3">It is a long established fact that a reader will be
+                                    distracted by the
+                                    readable content of a page when looking at its layout.</label>
+                            </li>
+                            <li class="flex items-baseline mb-4">
+                                <input class="mr-4" id="list-4" type="checkbox">
+                                <label for="list-4">It is a long established fact that a reader will be
+                                    distracted by the
+                                    readable content of a page when looking at its layout.</label>
+                            </li>
+                            <li class="flex items-baseline mb-4">
+                                <input class="mr-4" id="list-5" type="checkbox">
+                                <label for="list-5">It is a long established fact that a reader will be
+                                    distracted by the
+                                    readable content of a page when looking at its layout.</label>
+                            </li>
+                        </ul>
+
+                    </form>
+                    <button
+                        class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">next</button>
+                </div>
             </div>
             <div class="stepper_item hidden" id="stepper_content_3">
-                three
+                <div class="stepper-content">
+                    <div class="drop-shadow rounded p-20  bg-white">
+
+
+                        <div class="drop-shadow rounded p-20  bg-white">
+                            <h2 class="text-center my-10 font-bold capitalize text-2xl"> purchase code checker
+                            </h2>
+                            <label for="purchase_code" class="capitalize block mt-4">enter code</label>
+                            <input class="border block mt-2 px-4 py-2 w-full" id="purchase_code" type="text">
+                            <label for="purchase_code" class="capitalize block mt-4">purchase code
+                                verification</label>
+                            <input class="border block mt-2 px-4 py-2 w-full" id="purchase_code" type="text">
+
+                            <button
+                                class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">next</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="stepper_item hidden" id="stepper_content_4">
-                four
+                <div class="drop-shadow rounded p-20  bg-white">
+                    <h2 class="text-center mb-10 font-bold capitalize text-2xl"> setup api </h2>
+                    <label for="purchase_code" class="capitalize block mt-4">app key</label>
+                    <input class="border block mt-2 px-4 py-2 w-full" id="purchase_code" type="text">
+                    <label for="purchase_code" class="capitalize block mt-4">app secret</label>
+                    <input class="border block mt-2 px-4 py-2 w-full" id="purchase_code" type="text">
+
+                    <button
+                        class="mx-auto text-center px-14 py-2 font-medium flex bg-blue-600 text-white rounded capitalize mt-5">generate
+                        API</button>
+
+                    <div class="flex justify-center mt-4">
+                        <span id="copyGeneratedApi"> genereted api data will be here</span>
+                        <button id="copyGeneratBtn" class="ml-4"><i class="fa-solid fa-copy"></i></button>
+                    </div>
+
+
+                    <button
+                        class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">next</button>
+                </div>
+
             </div>
             <div class="stepper_item hidden" id="stepper_content_5">
-                five
+
+                <div class="drop-shadow bg-cover bg-center  bg-no-repeat  rounded p-20  bg-white"
+                    style="background-image: url('./images/congrats.png');">
+                    <h2 class="text-center my-10 font-medium capitalize text-violet-800 text-3xl  ">
+                        congratulations
+                    </h2>
+                    <img class="w-72 mx-auto" src="./images/chill.png" alt="">
+
+
+                    <button
+                        class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-10">next</button>
+                </div>
+
             </div>
+            <!-- custom stepper -->
         </div>
 
 
-        <!-- custom stepper -->
-    </div>
-
-    <div class="contianer mx-auto px-4">
-        <!-- navigation -->
-        <div class="flex justify-center my-10">
-            <img class="w-48" src="./images/maildoll-logo.png" alt="">
-        </div>
-        <div>
-            <ul class="stepper" data-mdb-stepper="stepper">
-                <li class="stepper-step stepper-active">
-                    <div class="stepper-head">
-                        <span class="stepper-head-icon"><i class="fa-solid fa-door-open"></i> </span>
-                        <span class="stepper-head-text"> welcome </span>
-                    </div>
-                    <div class="stepper-content">
-                        <div class="drop-shadow rounded p-20  bg-white">
-                            <img class="w-80 mx-auto" src="./images/wellcome-Vector.png" alt="">
-                            <h3 class=" text-center text-xl capitalize font-bold mt-5">Thank you for the purchase</h3>
-                            <button
-                                class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">start
-                                installation</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="stepper-step">
-                    <div class="stepper-head">
-                        <span class="stepper-head-icon"> <i class="fa-solid fa-phone-volume"></i></span>
-                        <span class="stepper-head-text"> check list</span>
-                    </div>
-                    <div class="stepper-content">
-                        <div class="drop-shadow rounded p-20  bg-white">
-
-                            <form>
-                                <ul class="flex items-center flex-col">
-                                    <li class="flex items-baseline mb-4">
-                                        <input class="mr-4" id="list-1" type="checkbox">
-                                        <label for="list-1">It is a long established fact that a reader will be
-                                            distracted by the
-                                            readable content of a page when looking at its layout.</label>
-                                    </li>
-                                    <li class="flex items-baseline mb-4">
-                                        <input class="mr-4" id="list-2" type="checkbox">
-                                        <label for="list-2">It is a long established fact that a reader will be
-                                            distracted by the
-                                            readable content of a page when looking at its layout.</label>
-                                    </li>
-                                    <li class="flex items-baseline mb-4">
-                                        <input class="mr-4" id="list-3" type="checkbox">
-                                        <label for="list-3">It is a long established fact that a reader will be
-                                            distracted by the
-                                            readable content of a page when looking at its layout.</label>
-                                    </li>
-                                    <li class="flex items-baseline mb-4">
-                                        <input class="mr-4" id="list-4" type="checkbox">
-                                        <label for="list-4">It is a long established fact that a reader will be
-                                            distracted by the
-                                            readable content of a page when looking at its layout.</label>
-                                    </li>
-                                    <li class="flex items-baseline mb-4">
-                                        <input class="mr-4" id="list-5" type="checkbox">
-                                        <label for="list-5">It is a long established fact that a reader will be
-                                            distracted by the
-                                            readable content of a page when looking at its layout.</label>
-                                    </li>
-                                </ul>
-
-                            </form>
-                            <button
-                                class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">next</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="stepper-step">
-                    <div class="stepper-head">
-                        <span class="stepper-head-icon"> <i class="fa-solid fa-envelope-circle-check"></i> </span>
-                        <span class="stepper-head-text"> code verification</span>
-                    </div>
-                    <div class="stepper-content">
-                        <div class="drop-shadow rounded p-20  bg-white">
-
-                            <form>
-                                <div class="drop-shadow rounded p-20  bg-white">
-                                    <h2 class="text-center my-10 font-bold capitalize text-2xl"> purchase code checker
-                                    </h2>
-                                    <label for="purchase_code" class="capitalize block mt-4">enter code</label>
-                                    <input class="border block mt-2 px-4 py-2 w-full" id="purchase_code" type="text">
-                                    <label for="purchase_code" class="capitalize block mt-4">purchase code
-                                        verification</label>
-                                    <input class="border block mt-2 px-4 py-2 w-full" id="purchase_code" type="text">
-                            </form>
-                            <button
-                                class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">next</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="stepper-step">
-                    <div class="stepper-head">
-                        <span class="stepper-head-icon"> <i class="fa-solid fa-gear"></i></span>
-                        <span class="stepper-head-text"> generate API</span>
-                    </div>
-                    <div class="stepper-content">
-                        <div class="drop-shadow rounded p-20  bg-white">
-
-                            <form>
-                                <div class="drop-shadow rounded p-20  bg-white">
-                                    <h2 class="text-center my-10 font-bold capitalize text-2xl"> setup api </h2>
-                                    <label for="purchase_code" class="capitalize block mt-4">app key</label>
-                                    <input class="border block mt-2 px-4 py-2 w-full" id="purchase_code" type="text">
-                                    <label for="purchase_code" class="capitalize block mt-4">app secret</label>
-                                    <input class="border block mt-2 px-4 py-2 w-full" id="purchase_code" type="text">
-
-                                    <button
-                                        class="mx-auto text-center px-14 py-2 font-medium flex bg-blue-600 text-white rounded capitalize mt-5">generate
-                                        API</button>
-
-                                    <div class="flex justify-center mt-4">
-                                        <span id="copyGeneratedApi"> genereted api data will be here</span>
-                                        <button id="copyGeneratBtn" class="ml-4"><i
-                                                class="fa-solid fa-copy"></i></button>
-                                    </div>
-
-                            </form>
-                            <button
-                                class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">next</button>
-                        </div>
-                    </div>
-
-                </li>
-                <li class="stepper-step">
-                    <div class="stepper-head">
-                        <span class="stepper-head-icon"> <i class="fa-solid fa-circle-check"></i></span>
-                        <span class="stepper-head-text"> Done</span>
-                    </div>
-                    <div class="stepper-content">
-                        <div class="drop-shadow rounded p-20  bg-white">
-
-                            <form>
-                                <div class="drop-shadow bg-cover bg-center  bg-no-repeat  rounded p-20  bg-white"
-                                    style="background-image: url('./images/congrats.png');">
-                                    <h2 class="text-center my-10 font-medium capitalize text-violet-800 text-3xl  ">
-                                        congratulations
-                                    </h2>
-                                    <img class="w-72 mx-auto" src="./images/chill.png" alt="">
-
-                            </form>
-                            <button
-                                class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-10">next</button>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
-    <script src="./js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+        <script src="./js/app.js"></script>
 </body>
 
 </html>
