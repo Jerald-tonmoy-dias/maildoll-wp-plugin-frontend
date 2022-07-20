@@ -69,51 +69,51 @@
                 <div class="drop-shadow rounded p-20  bg-white">
                     <img class="w-80 mx-auto" src="./images/wellcome-Vector.png" alt="">
                     <h3 class=" text-center text-xl capitalize font-bold mt-5">Thank you for the purchase</h3>
-                    <button
+                    <button onclick="customProgressFunc('20','stepper_content_2')"
                         class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">start
                         installation</button>
                 </div>
             </div>
             <div class="stepper_item hidden" id="stepper_content_2">
                 <div class="drop-shadow rounded p-20  bg-white">
-
-                    <form>
-                        <ul class="flex items-center flex-col">
-                            <li class="flex items-baseline mb-4">
-                                <input class="mr-4" id="list-1" type="checkbox">
-                                <label for="list-1">It is a long established fact that a reader will be
-                                    distracted by the
-                                    readable content of a page when looking at its layout.</label>
-                            </li>
-                            <li class="flex items-baseline mb-4">
-                                <input class="mr-4" id="list-2" type="checkbox">
-                                <label for="list-2">It is a long established fact that a reader will be
-                                    distracted by the
-                                    readable content of a page when looking at its layout.</label>
-                            </li>
-                            <li class="flex items-baseline mb-4">
-                                <input class="mr-4" id="list-3" type="checkbox">
-                                <label for="list-3">It is a long established fact that a reader will be
-                                    distracted by the
-                                    readable content of a page when looking at its layout.</label>
-                            </li>
-                            <li class="flex items-baseline mb-4">
-                                <input class="mr-4" id="list-4" type="checkbox">
-                                <label for="list-4">It is a long established fact that a reader will be
-                                    distracted by the
-                                    readable content of a page when looking at its layout.</label>
-                            </li>
-                            <li class="flex items-baseline mb-4">
-                                <input class="mr-4" id="list-5" type="checkbox">
-                                <label for="list-5">It is a long established fact that a reader will be
-                                    distracted by the
-                                    readable content of a page when looking at its layout.</label>
-                            </li>
-                        </ul>
-
-                    </form>
-                    <button
-                        class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">next</button>
+                    <ul class="flex items-center flex-col">
+                        <li class="flex items-baseline mb-4">
+                            <input class="mr-4" id="list-1" type="checkbox">
+                            <label for="list-1">It is a long established fact that a reader will be
+                                distracted by the
+                                readable content of a page when looking at its layout.</label>
+                        </li>
+                        <li class="flex items-baseline mb-4">
+                            <input class="mr-4" id="list-2" type="checkbox">
+                            <label for="list-2">It is a long established fact that a reader will be
+                                distracted by the
+                                readable content of a page when looking at its layout.</label>
+                        </li>
+                        <li class="flex items-baseline mb-4">
+                            <input class="mr-4" id="list-3" type="checkbox">
+                            <label for="list-3">It is a long established fact that a reader will be
+                                distracted by the
+                                readable content of a page when looking at its layout.</label>
+                        </li>
+                        <li class="flex items-baseline mb-4">
+                            <input class="mr-4" id="list-4" type="checkbox">
+                            <label for="list-4">It is a long established fact that a reader will be
+                                distracted by the
+                                readable content of a page when looking at its layout.</label>
+                        </li>
+                        <li class="flex items-baseline mb-4">
+                            <input class="mr-4" id="list-5" type="checkbox">
+                            <label for="list-5">It is a long established fact that a reader will be
+                                distracted by the
+                                readable content of a page when looking at its layout.</label>
+                        </li>
+                    </ul>
+                    <div class="flex justify-center">
+                        <button onclick="prevProgressFunc('20','stepper_content_1','stepper_content_2')"
+                            class="mr-4 text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">prev</button>
+                        <button onclick="customProgressFunc('60','stepper_content_3')"
+                            class="ml-4 text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">next</button>
+                    </div>
                 </div>
             </div>
             <div class="stepper_item hidden" id="stepper_content_3">
@@ -130,8 +130,12 @@
                                 verification</label>
                             <input class="border block mt-2 px-4 py-2 w-full" id="purchase_code" type="text">
 
-                            <button
-                                class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">next</button>
+                            <div class="flex justify-center">
+                                <button onclick="prevProgressFunc('40','stepper_content_2','stepper_content_3')"
+                                    class="mr-4 text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">prev</button>
+                                <button onclick="customProgressFunc('80','stepper_content_4')"
+                                    class="ml-4 text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">next</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -154,8 +158,12 @@
                     </div>
 
 
-                    <button
-                        class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">next</button>
+                    <div class="flex justify-center">
+                        <button onclick="prevProgressFunc('60','stepper_content_3','stepper_content_4')"
+                            class="mr-4 text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">prev</button>
+                        <button onclick="customProgressFunc('100','stepper_content_5')"
+                            class="ml-4 text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">next</button>
+                    </div>
                 </div>
 
             </div>
@@ -169,8 +177,13 @@
                     <img class="w-72 mx-auto" src="./images/chill.png" alt="">
 
 
-                    <button
-                        class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-10">next</button>
+                    <div class="flex justify-center">
+                        <button onclick="prevProgressFunc('80','stepper_content_4','stepper_content_5')"
+                            class="mr-4 text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">prev</button>
+                        <button
+                            class="ml-4 text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">ready
+                            to go</button>
+                    </div>
                 </div>
 
             </div>

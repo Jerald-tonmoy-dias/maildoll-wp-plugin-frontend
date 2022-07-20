@@ -10,20 +10,32 @@
 // customer stepper js
 
 // stepper_progress
+// let stepper_wrapper = document.getElementById("stepper_wrapper");
 let stepper_progress = document.getElementById("stepper_progress");
-let stepper_wrapper = document.getElementById("stepper_wrapper");
 let childItem = document.querySelectorAll(".stepper_item");
 
 // functions
 let customProgressFunc = (percentage, itemToAdd) => {
   // percentage
   stepper_progress.style.width = `${percentage}%`;
-  //   stepper_progress.classList.add("bg-violate-800");
+  // stepper_progress.classList.add("bg-violate-800");
 
-  //   code here
+  // code here
   for (let i = 0; i < childItem.length; i++) {
     childItem[i].classList.add("hidden");
   }
   document.getElementById(`${itemToAdd}`).classList.remove("hidden");
-  //   code here
+  // code here
+};
+
+// next function
+let prevProgressFunc = (percentage, prevItem, thisItem) => {
+  stepper_progress.style.width = `${percentage}%`;
+
+  // for (let i = 0; i < childItem.length; i++) {
+  //   childItem[i].classList.add("hidden");
+  // }
+  document.getElementById(`${thisItem}`).classList.add("hidden");
+
+  document.getElementById(`${prevItem}`).classList.remove("hidden");
 };
