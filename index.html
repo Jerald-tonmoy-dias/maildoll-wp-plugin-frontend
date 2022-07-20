@@ -24,9 +24,13 @@
                         <span class="stepper-head-text"> welcome </span>
                     </div>
                     <div class="stepper-content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore
-                        magna aliqua.
+                        <div class="drop-shadow rounded p-20  bg-white">
+                            <img class="w-80 mx-auto" src="./images/wellcome-Vector.png" alt="">
+                            <h3 class=" text-center text-xl capitalize font-bold mt-5">Thank you for the purchase</h3>
+                            <button
+                                class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">start
+                                installation</button>
+                        </div>
                     </div>
                 </li>
                 <li class="stepper-step">
@@ -35,8 +39,46 @@
                         <span class="stepper-head-text"> check list</span>
                     </div>
                     <div class="stepper-content">
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.
+                        <div class="drop-shadow rounded p-20  bg-white">
+
+                            <form>
+                                <ul class="flex items-center flex-col">
+                                    <li class="flex items-baseline mb-4">
+                                        <input class="mr-4" id="list-1" type="checkbox">
+                                        <label for="list-1">It is a long established fact that a reader will be
+                                            distracted by the
+                                            readable content of a page when looking at its layout.</label>
+                                    </li>
+                                    <li class="flex items-baseline mb-4">
+                                        <input class="mr-4" id="list-2" type="checkbox">
+                                        <label for="list-2">It is a long established fact that a reader will be
+                                            distracted by the
+                                            readable content of a page when looking at its layout.</label>
+                                    </li>
+                                    <li class="flex items-baseline mb-4">
+                                        <input class="mr-4" id="list-3" type="checkbox">
+                                        <label for="list-3">It is a long established fact that a reader will be
+                                            distracted by the
+                                            readable content of a page when looking at its layout.</label>
+                                    </li>
+                                    <li class="flex items-baseline mb-4">
+                                        <input class="mr-4" id="list-4" type="checkbox">
+                                        <label for="list-4">It is a long established fact that a reader will be
+                                            distracted by the
+                                            readable content of a page when looking at its layout.</label>
+                                    </li>
+                                    <li class="flex items-baseline mb-4">
+                                        <input class="mr-4" id="list-5" type="checkbox">
+                                        <label for="list-5">It is a long established fact that a reader will be
+                                            distracted by the
+                                            readable content of a page when looking at its layout.</label>
+                                    </li>
+                                </ul>
+
+                            </form>
+                            <button
+                                class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">next</button>
+                        </div>
                     </div>
                 </li>
                 <li class="stepper-step">
@@ -45,8 +87,21 @@
                         <span class="stepper-head-text"> code verification</span>
                     </div>
                     <div class="stepper-content">
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur.
+                        <div class="drop-shadow rounded p-20  bg-white">
+
+                            <form>
+                                <div class="drop-shadow rounded p-20  bg-white">
+                                    <h2 class="text-center my-10 font-bold capitalize text-2xl"> purchase code checker
+                                    </h2>
+                                    <label for="purchase_code" class="capitalize block mt-4">enter code</label>
+                                    <input class="border block mt-2 px-4 py-2 w-full" id="purchase_code" type="text">
+                                    <label for="purchase_code" class="capitalize block mt-4">purchase code
+                                        verification</label>
+                                    <input class="border block mt-2 px-4 py-2 w-full" id="purchase_code" type="text">
+                            </form>
+                            <button
+                                class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">next</button>
+                        </div>
                     </div>
                 </li>
                 <li class="stepper-step">
@@ -55,9 +110,32 @@
                         <span class="stepper-head-text"> generate API</span>
                     </div>
                     <div class="stepper-content">
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur.
+                        <div class="drop-shadow rounded p-20  bg-white">
+
+                            <form>
+                                <div class="drop-shadow rounded p-20  bg-white">
+                                    <h2 class="text-center my-10 font-bold capitalize text-2xl"> setup api </h2>
+                                    <label for="purchase_code" class="capitalize block mt-4">app key</label>
+                                    <input class="border block mt-2 px-4 py-2 w-full" id="purchase_code" type="text">
+                                    <label for="purchase_code" class="capitalize block mt-4">app secret</label>
+                                    <input class="border block mt-2 px-4 py-2 w-full" id="purchase_code" type="text">
+
+                                    <button
+                                        class="mx-auto text-center px-14 py-2 font-medium flex bg-blue-600 text-white rounded capitalize mt-5">generate
+                                        API</button>
+
+                                    <div class="flex justify-center mt-4">
+                                        <span id="copyGeneratedApi"> genereted api data will be here</span>
+                                        <button id="copyGeneratBtn" class="ml-4"><i
+                                                class="fa-solid fa-copy"></i></button>
+                                    </div>
+
+                            </form>
+                            <button
+                                class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">next</button>
+                        </div>
                     </div>
+
                 </li>
                 <li class="stepper-step">
                     <div class="stepper-head">
@@ -65,25 +143,37 @@
                         <span class="stepper-head-text"> Done</span>
                     </div>
                     <div class="stepper-content">
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur.
+                        <div class="drop-shadow rounded p-20  bg-white">
+
+                            <form>
+                                <div class="drop-shadow bg-cover bg-center  bg-no-repeat  rounded p-20  bg-white"
+                                    style="background-image: url('./images/congrats.png');">
+                                    <h2 class="text-center my-10 font-medium capitalize text-violet-800 text-3xl  ">
+                                        congratulations
+                                    </h2>
+                                    <img class="w-72 mx-auto" src="./images/chill.png" alt="">
+
+                            </form>
+                            <button
+                                class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-10">next</button>
+                        </div>
                     </div>
                 </li>
             </ul>
         </div>
         <!-- 1st step -->
-        <h2 class="text-center my-10 font-bold capitalize text-2xl"> welcome (1st step) </h2>
+        <!-- <h2 class="text-center my-10 font-bold capitalize text-2xl"> welcome (1st step) </h2>
         <div class="drop-shadow rounded p-20  bg-white">
             <img class="w-80 mx-auto" src="./images/wellcome-Vector.png" alt="">
             <h3 class=" text-center text-xl capitalize font-bold mt-5">Thank you for the purchase</h3>
             <button
                 class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">start
                 installation</button>
-        </div>
+        </div> -->
 
 
         <!-- 2nd step -->
-        <h2 class="text-center my-10 font-bold capitalize text-2xl"> check list (2nd step) </h2>
+        <!-- <h2 class="text-center my-10 font-bold capitalize text-2xl"> check list (2nd step) </h2>
         <div class="drop-shadow rounded p-20  bg-white">
 
             <form>
@@ -118,12 +208,12 @@
             </form>
             <button
                 class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">next</button>
-        </div>
+        </div> -->
 
 
 
         <!-- 3rd step -->
-        <h2 class="text-center my-10 font-bold capitalize text-2xl"> code verification (3rd step) </h2>
+        <!-- <h2 class="text-center my-10 font-bold capitalize text-2xl"> code verification (3rd step) </h2>
         <div class="drop-shadow rounded p-20  bg-white">
 
             <form>
@@ -136,14 +226,14 @@
             </form>
             <button
                 class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">next</button>
-        </div>
+        </div> -->
 
 
         <!-- 4th step -->
-        <h2 class="text-center my-10 font-bold capitalize text-2xl"> generate api (4th step) </h2>
+        <!-- <h2 class="text-center my-10 font-bold capitalize text-2xl"> generate api (4th step) </h2>
         <div class="drop-shadow rounded p-20  bg-white">
 
-            <!-- <form > -->
+            <form >
             <div class="drop-shadow rounded p-20  bg-white">
                 <h2 class="text-center my-10 font-bold capitalize text-2xl"> setup api </h2>
                 <label for="purchase_code" class="capitalize block mt-4">app key</label>
@@ -160,28 +250,28 @@
                     <button id="copyGeneratBtn" class="ml-4"><i class="fa-solid fa-copy"></i></button>
                 </div>
 
-                <!-- </form> -->
+                </form>
                 <button
                     class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-5">next</button>
             </div>
-        </div>
+        </div> -->
 
 
         <!-- 5th step -->
-        <h2 class="text-center my-10 font-bold capitalize text-2xl"> generate api (5th step) </h2>
-        <div class="drop-shadow rounded p-20  bg-white">
+        <!-- <h2 class="text-center my-10 font-bold capitalize text-2xl"> generate api (5th step) </h2>
+    <div class="drop-shadow rounded p-20  bg-white">
 
-            <form>
-                <div class="drop-shadow bg-cover bg-center  bg-no-repeat  rounded p-20  bg-white"
-                    style="background-image: url('./images/congrats.png');">
-                    <h2 class="text-center my-10 font-medium capitalize text-violet-800 text-3xl  "> congratulations
-                    </h2>
-                    <img class="w-72 mx-auto" src="./images/chill.png" alt="">
+        <form>
+            <div class="drop-shadow bg-cover bg-center  bg-no-repeat  rounded p-20  bg-white"
+                style="background-image: url('./images/congrats.png');">
+                <h2 class="text-center my-10 font-medium capitalize text-violet-800 text-3xl  "> congratulations
+                </h2>
+                <img class="w-72 mx-auto" src="./images/chill.png" alt="">
 
-            </form>
-            <button
-                class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-10">next</button>
-        </div>
+        </form>
+        <button
+            class="mx-auto text-center px-14 py-2 font-medium flex bg-violet-800 text-white rounded capitalize mt-10">next</button>
+    </div> -->
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
