@@ -691,6 +691,10 @@ video {
   display: grid;
 }
 
+.contents {
+  display: contents;
+}
+
 .hidden {
   display: none;
 }
@@ -723,6 +727,10 @@ video {
   width: 18rem;
 }
 
+.w-60 {
+  width: 15rem;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -750,6 +758,10 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -797,12 +809,12 @@ video {
   border-radius: 0.25rem;
 }
 
-.border-4 {
-  border-width: 4px;
-}
-
 .border {
   border-width: 1px;
+}
+
+.border-4 {
+  border-width: 4px;
 }
 
 .border-x-0 {
@@ -1002,10 +1014,21 @@ video {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
 .drop-shadow {
   --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
+
+/* @layer components {
+    .apply-btn-style {
+      @apply nav-link w-full block font-medium text-xs leading-tight capitalize border-x-0 border-t-0 border-b-2 border-transparent px-6 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent maildoll_nested_tab_link;
+    }
+  } */
 
 .hover\:border-transparent:hover {
   border-color: transparent;
@@ -1035,6 +1058,10 @@ video {
 @media (min-width: 768px) {
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row {

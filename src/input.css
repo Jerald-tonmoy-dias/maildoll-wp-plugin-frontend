@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-    .btn-blue {
-      @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+/* @layer components {
+    .apply-btn-style {
+      @apply nav-link w-full block font-medium text-xs leading-tight capitalize border-x-0 border-t-0 border-b-2 border-transparent px-6 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent maildoll_nested_tab_link;
     }
-  }
+  } */
